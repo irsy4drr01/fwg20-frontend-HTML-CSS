@@ -22,6 +22,7 @@ body>img {
     justify-content: center;
     align-items: center;
     margin-right: 25px;
+    height: 100vh;
 }
 
 main[class="container"] {   
@@ -87,6 +88,7 @@ form .input {
     display: flex;
     align-items: center;
     border: 1px solid #DEDEDE;
+    border-radius: 8px;
     margin-bottom: 10px;
 }
 
@@ -113,6 +115,10 @@ form .btn {
     font-size: 16px;
     font-weight: 500;
     color: #0B132A;
+}
+
+form .btn:hover {
+    background-color: #c06600;
 }
 
 .btn-login {
@@ -152,3 +158,30 @@ p a {
     cursor: pointer;
 }
 
+@media screen and (min-width: 426px) and (max-width: 768px) {   
+    
+    main[class="container"] {
+        width: 300px;
+        height: 500px;
+    }
+
+    form .input {        
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {   
+    
+    body>img {
+        display: none;
+    }
+    
+    main[class="container"] {
+        width: 300px;
+        height: 500px;
+    }
+
+    form .input {        
+        margin-bottom: 0;
+    }
+}
