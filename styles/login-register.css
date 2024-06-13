@@ -243,6 +243,10 @@ p a {
         display: none;
     }
 
+    .container-main {        
+        max-height: 572px;
+    }
+
     main[class="container"] {
         padding: 30px 20px 30px 20px;
     }
