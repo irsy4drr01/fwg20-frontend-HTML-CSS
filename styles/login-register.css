@@ -9,45 +9,71 @@
 
 body {
     background-color: white;
-    display: flex;    
+    display: flex;
+    padding-left: calc((100vw - 1440px) / 2);
+    padding-right: calc((100vw - 1440px) / 2);
 }
 
 body>img {    
     height: 100vh;
+    max-height: 1080px;
+}
+
+#bg2 {
+    display: none;
 }
 
 .container-main {
     display: flex;
-    flex: 1;    
     justify-content: center;
     align-items: center;
-    margin-right: 25px;
+    width: 100vw;
     height: 100vh;
+    max-height: 1080px;
 }
 
 main[class="container"] {   
     display: flex;
     flex-direction: column;
-    width: 550px;
-    height: 600px;
-    margin: 0 15px 0 15px;
+    width: 100%;
+    height: 100%;
+    padding: 50px 60px 50px 60px;    
+}
+
+main[class="container-login"] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 80px 60px 80px 60px;
 }
 
 main header{
-    flex: 1;
+    flex: 0.75;
 }
 
-main section[class="register"] {
-    flex: 6;
+#header-login {
+    flex: 0.5;
+}
+
+main section[class="register-login"] {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.register-login#login-form {
+    flex: 2;
 }
 
 main section[class="login"] {
-    flex: 2;
+    flex: 1;
 }
 
 header {    
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 header p {
@@ -68,7 +94,7 @@ section[class="register-login"]>p:first-child  {
 }
 
 section[class="register-login"]>p:nth-child(2)  {
-    margin: 10px 0;
+    margin: 10px 0 20px 0;
     color: #4F5665;
     font-weight: 400;
     font-size: 16px;
@@ -89,7 +115,7 @@ form .input {
     align-items: center;
     border: 1px solid #DEDEDE;
     border-radius: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 input {
@@ -118,11 +144,10 @@ form .btn {
 }
 
 form .btn:hover {
-    background-color: #c06600;
-}
-
-.btn-login {
-    margin-top: 100px;
+    background-color: #fca23c;
+    /* border: 4px solid #ff0000; */
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .login {
@@ -141,47 +166,112 @@ form .btn:hover {
 
 .login-option {    
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
 }
 
 .login-option img {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .login-facebook, .login-google {
     display: flex;
-}
-
-p a {
-    color: #FF8906;
+    justify-content: center;
+    width: 49%;
+    padding: 5px 0 5px;
+    border-radius: 5px;    
+    box-shadow: 0px 4px 10px 0px #00000014;
     cursor: pointer;
 }
 
-@media screen and (min-width: 426px) and (max-width: 768px) {   
-    
+p a {
+    color: #1100FF;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+@media screen and (min-height: 1081px) {
+    main[class="container"] {           
+        /* padding-top: calc((100% - (768px - 60px))/2); */
+        /* padding-bottom: calc((100% - (768px - 60px))/2); */
+        padding: 100px 50px;
+    }
+
+    .container-main#container-main-login{
+        padding: 200px 0;
+    }
+
+    main[class="container-login"] {       
+        padding: 0 60px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    #bg1 {
+        display: none;
+    }
+
+    #bg2 {
+        display: block;
+    }
+
     main[class="container"] {
-        width: 300px;
-        height: 500px;
+        padding: 10px 20px 15px 20px;
     }
 
     form .input {        
-        margin-bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    section[class="register-login"]>p:nth-child(2)  {
+        margin-bottom: 10px;        
+    }
+}
+
+@media screen and (max-width: 600px) {   
+    
+    #bg2 {
+        display: none;
     }
 }
 
 @media screen and (max-width: 425px) {   
     
-    body>img {
+    #bg1 {
         display: none;
     }
-    
+
     main[class="container"] {
-        width: 300px;
-        height: 500px;
+        padding: 20px;
+    }
+
+    main[class="container-login"] {
+        padding: 40px 20px;
     }
 
     form .input {        
-        margin-bottom: 0;
+        margin-bottom: 5px;
+    }
+
+    section[class="register-login"]>p:nth-child(2)  {
+        margin-bottom: 5px;        
+    }
+
+    .login-option {
+        justify-content: space-evenly;
+    }
+
+    .login-facebook, .login-google {
+        width: 40px;
+        height: 40px;
+    }
+
+    .login-option img {
+        margin: 0;
+    }
+
+    .login-facebook p, .login-google p {
+        display: none;        
     }
 }
+
