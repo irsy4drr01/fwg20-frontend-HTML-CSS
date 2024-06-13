@@ -248,7 +248,7 @@ p a {
     }
 
     main[class="container"] {
-        padding: 30px 20px 30px 20px;
+        padding: 20px 15px 15px;
     }
 
     main[class="container-login"] {
@@ -263,12 +263,16 @@ p a {
         flex: 0.25;
     }
     
+    #p2-login {
+        margin-bottom: 15px;
+    }
+    
     form .input {        
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
 
     form .input-login {        
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     section[class="register-login"]>p:nth-child(2)  {
@@ -282,6 +286,7 @@ p a {
     .login-facebook, .login-google {
         width: 40px;
         height: 40px;
+        align-items: center;
     }
 
     .login-option img {
