@@ -191,9 +191,7 @@ p a {
 }
 
 @media screen and (min-height: 1081px) {
-    main[class="container"] {           
-        /* padding-top: calc((100% - (768px - 60px))/2); */
-        /* padding-bottom: calc((100% - (768px - 60px))/2); */
+    main[class="container"] {
         padding: 100px 50px;
     }
 
@@ -243,20 +241,30 @@ p a {
         display: none;
     }
 
-    .container-main {        
-        max-height: 572px;
+    .container-main {
+        height: 548px;
+        width: 320px;
+        margin: 0 10px 0 10px;
+        flex: 1;
+        margin-top: calc((100vh - 548px) / 2);
+        margin-bottom: calc((100vh - 548px) / 2);
     }
 
     main[class="container"] {
-        padding: 20px 15px 15px;
+        padding: 0;
     }
 
     main[class="container-login"] {
-        padding: 70px 20px 100px;
+        padding: 0;
     }
 
-    main header{
-        flex: 0.25;
+    .container-main#container-main-login{
+        height: 528px;
+        width: 320px;
+        margin: 0 10px 0 10px;
+        flex: 1;
+        margin-top: calc((100vh - 528px) / 2);
+        margin-bottom: calc((100vh - 528px) / 2);
     }
 
     #header-login {
