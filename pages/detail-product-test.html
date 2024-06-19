@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Product</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        h1 {
+            font-family: 'Sacramento', cursive;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- rgba(11, 9, 9, 0.13) -->
+    <nav id="navbar"
+    class="bg-black bg-[rgba(0,0,0,0,5)] text-white px-20 h-[60px] py-4 md:py-[30px] flex flex-col gap-10 md:gap-0 md:flex-row items-center md:h-20  w-full">
+    <div class="flex flex-col md:flex-row flex-1 w-full gap-10 md:gap-0">
+        <div class="text-xl font-bold flex justify-between mt-3 md:mt-0">
+            <div class="flex gap-[10px] md:gap-[20px]">
+                <i class="fill-[#FFFFFF]" data-feather="coffee"></i>
+                <h1>Coffee Shop</h1>
+            </div>
+            <ul class="flex gap-10 md:hidden">
+                <li><i data-feather="shopping-cart"></i></li>
+                <li><button onclick="showMenu()"><i data-feather="menu"></i></button></li>
+            </ul>
+        </div>
+        <ul id="menuItems2" class="hidden md:flex flex-col md:flex-row gap-5 flex-1 justify-center items-center md:items-start w-full">
+            <li class="w-full md:w-auto"><a class="hover:border-b-2 pb-2 -mt-2 hover:border-orange-500" href="#">Home</a></li>
+            <li class="w-full md:w-auto"><a class="hover:border-b-2 pb-2 -mt-2 hover:border-orange-500" href="#">Product</a></li>
+        </ul>
+    </div>
+    <div id="menuItems1" class="hidden flex-1 md:flex w-full">
+        <ul class="flex flex-col md:flex-row md:justify-end gap-[20px] items-center w-full">
+            <li class="w-full md:w-auto hidden md:block"><a href="#"><i data-feather="search"></i></a></li>
+            <li class="w-full md:w-auto hidden md:block"><a href="#"><i data-feather="shopping-cart"></i></a></li>
+            <li class="w-full md:w-auto"><button class="px-5 py-2 bg-transparent border border-white rounded w-full">Sign In</button></li>
+            <li class="w-full md:w-auto"><button class="px-5 py-2 bg-orange-500 border border-orange-500 rounded w-full">Sign Up</button></li>
+        </ul>
+    </div>
+</nav>
+    <header class="flex flex-col md:flex-row h-screen my-[50px]">
+        <div class="flex-1 flex justify-center md:justify-end items-center">
+            <div class="w-[80%] items-center flex-col flex gap-[20px]">
+                <div><img width="450px" src="./asset/image/dphead1.png" alt=""></div>
+                <div class="flex gap-[20px]">
+                    <div><img width="135px" src="./asset/image/dphead2.png" alt=""></div>
+                    <div><img width="135px" src="./asset/image/dphead3.png" alt=""></div>
+                    <div><img width="135px" src="./asset/image/dphead4.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-1 flex justify-center items-center text-[#4F5665]">
+            <div class="flex  flex-col w-[80%] gap-[10px]">
+                <div
+                    class="flex justify-center items-center text-[#FFFFFF] rounded-3xl bg-[#D00000] w-[135px] h-[35px]">
+                    FLASH SALE!</div>
+                <div class="font-bold text-[#0B0909] text-[48px]">Hazelnut Latte</div>
+                <div class="flex items-center gap-[10px]">
+                    <div class="line-through text-[12px] text-[#D00000]">IDR 20.000</div>
+                    <div class="text-[22px] text-[#FF8906]">IDR 10.000</div>
+                </div>
+                <div class="flex gap-[10px] items-center">
+                    <div><i class="text-[#FF8906] fill-[#FF8906] h-[15px] w-[15px]" data-feather="star"></i></div>
+                    <div><i class="text-[#FF8906] fill-[#FF8906] h-[15px] w-[15px]" data-feather="star"></i></div>
+                    <div><i class="text-[#FF8906] fill-[#FF8906] h-[15px] w-[15px]" data-feather="star"></i></div>
+                    <div><i class="text-[#FF8906] fill-[#FF8906] h-[15px] w-[15px]" data-feather="star"></i></div>
+                    <div>5.0</div>
+                </div>
+                <div class="flex gap-[15px] items-center">
+                    <div>200+ Review</div>
+                    <div class="w-[3px] h-[23px] bg-[#4F5665]"></div>
+                    <div>Recommendation</div>
+                    <div><i class="text-[#FF8906]" data-feather="thumbs-up"></i></div>
+                </div>
+                <div>Cold brewing is a method of brewing that combines ground coffee and cool water and uses time
+                    instead of heat to extract the flavor. It is brewed in small batches and steeped for as long as 48
+                    hours.</div>
+                <div class="flex w-[115px] h-[35px] border-2 rounded">
+                    <div class="flex-1 flex items-center justify-center border-2 rounded border-[#FF8906]"><i
+                            data-feather="minus"></i></div>
+                    <div class="flex-1 flex items-center justify-center">1</div>
+                    <div class="flex-1 flex items-center justify-center border-2 rounded bg-[#FF8906] border-[#FF8906]">
+                        <i data-feather="plus"></i>
+                    </div>
+                </div>
+                <div>Choose Size</div>
+                <div class="flex justify-between gap-[30px]">
+                    <div class="flex-1"><button class=" w-full h-[40px] border-2 font-bold hover:border-[#FF8906]"
+                            type="submit">Regular</button></div>
+                    <div class="flex-1"><button class="w-full h-[40px] border-2 font-bold hover:border-[#FF8906]"
+                            type="submit">Medium</button></div>
+                    <div class="flex-1"><button class="w-full h-[40px] border-2 font-bold hover:border-[#FF8906]"
+                            type="submit">Large</button></div>
+                </div>
+                <div>Hot/Ice?</div>
+                <div class="flex gap-[30px] justify-between">
+                    <div class="flex-1"><button class="w-full h-[40px] border-2 font-bold hover:border-[#FF8906]"
+                            type="submit">Ice</button></div>
+                    <div class="flex-1"><button class="w-full h-[40px] border-2 font-bold hover:border-[#FF8906]"
+                            type="submit">Hot</button></div>
+                </div>
+                <div class="flex gap-[30px] justify-between">
+                    <div class="flex-1"><a href="./checkout-product.html"><button
+                            class="w-full h-[40px] border-2 font-bold hover:border-[#FF8906] hover:bg-[#FF8906] rounded-[6px]"
+                            type="submit">Buy</button></a></div>
+                    <div class="flex-1"><a href="./checkout-product.html"><button
+                            class="flex justify-center items-center gap-[10px] w-full h-[40px] border-2 hover:border-[#FF8906] font-bold text-[#FF8906] rounded-[6px]" type="submit"><i data-feather="shopping-cart"></i>add to cart</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="flex md:pt-[0px] pt-[450px] h-[1350px] md:h-[800px] justify-center">
+        <div class="w-[90%] flex flex-col gap-[25px]">
+            <div class="text-[#0B0909] text-[48px] font-bold">Rekommendation <span class="text-[#8E6447]">For You</span>
+            </div>
+            <div class="flex flex-col md:flex-row gap-[20px]">
+                <div class=" flex flex-col">
+                    <div><img class="w-[100%]" src="./asset/image/dpsec1.png" alt=""></div>
+                        <div
+                            class="flex justify-center items-center text-[#FFFFFF] rounded-3xl bg-[#D00000] w-[135px] h-[35px] ml-[20px] -mt-[430px] md:-mt-[350px]">
+                            FLASH SALE!</div>
+                    <div class=" flex justify-center items-center">
+                        <div class="flex items-center justify-center bg-[white] w-[90%] mt-[300px] md:mt-[250px]">
+                            <div class="flex flex-col gap-[10px] mx-[15px] my-[25px]">
+                                <div class="text-[24px] font-bold text-[#0B132A]">Hazelnut Latte</div>
+                                <div>You can explore the menu that we provide with fun and have their own taste and make
+                                    your
+                                    day better.</div>
+                                    <div class="flex gap-[10px] items-center">
+                                        <div><i class="text-[#FF8906] fill-[#FF8906] h-[15px] w-[15px]" data-feather="star"></i></div>
+                                        <div><i class="text-[#FF8906] fill-[#FF8906] h-[15px] w-[15px]" data-feather="star"></i></div>
+                                        <div><i class="text-[#FF8906] fill-[#FF8906] h-[15px] w-[15px]" data-feather="star"></i></div>
+                                        <div><i class="text-[#FF8906] fill-[#FF8906] h-[15px] w-[15px]" data-feather="star"></i></div>
+                                        <div>5.0</div>
+                                    </div>
+                                <div class="flex items-center gap-[10px]">
+                                    <div class="line-through text-[12px] text-[#D00000]">IDR 20.000</div>
+                                    <div class="text-[22px] text-[#FF8906]">IDR 10.000</div>
+                                </div>
+                                <div class="flex items-center justify-between gap-[10px]">
+                                    <div class="flex-1"><button
+                                            class="rounded-md font-bold border-none bg-[#FF8906] text-[black] h-[35px] w-full"
+                                            type="submit"> Buy</button></div>
+                                    <div class="w-[60px]"><button
+                                            class="rounded-md flex border-[#FF8906] text-[#FF8906] justify-center items-center border-2 h-[35px] w-full"
+                                            type="submit"><i data-feather="shopping-cart"></i></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex flex-col">
+                    <div><img class="w-[100%]" src="./asset/image/dpsec1.png" alt=""></div>
+                        <div
+                            class="flex justify-center items-center text-[#FFFFFF] rounded-3xl bg-[#D00000] w-[135px] h-[35px] ml-[20px] -mt-[430px] md:-mt-[350px]">
+                            FLASH SALE!</div>
+                    <div class=" flex justify-center items-center">
+                        <div class="flex items-center justify-center bg-[white] w-[90%] mt-[300px] md:mt-[250px]">
+                            <div class="flex flex-col gap-[10px] mx-[15px] my-[25px]">
+                                <div class="text-[24px] font-bold text-[#0B132A]">Hazelnut Latte</div>
+                                <div>You can explore the menu that we provide with fun and have their own taste and make
+                                    your
+                                    day better.</div>
+                                    <div class="flex gap-[10px] items-center">
+                                        <div><i class="text-[#FF8906] fill-[#FF8906] h-[15px] w-[15px]" data-feather="star"></i></div>
+                                        <div><i class="text-[#FF8906] fill-[#FF8906] h-[15px] w-[15px]" data-feather="star"></i></div>
+                                        <div><i class="text-[#FF8906] fill-[#FF8906] h-[15px] w-[15px]" data-feather="star"></i></div>
+                                        <div><i class="text-[#FF8906] fill-[#FF8906] h-[15px] w-[15px]" data-feather="star"></i></div>
+                                        <div>5.0</div>
+                                    </div>
+                                <div class="flex items-center gap-[10px]">
+                                    <div class="line-through text-[12px] text-[#D00000]">IDR 20.000</div>
+                                    <div class="text-[22px] text-[#FF8906]">IDR 10.000</div>
+                                </div>
+                                <div class="flex items-center justify-between gap-[10px]">
+                                    <div class="flex-1"><button
+                                            class="rounded-md font-bold border-none bg-[#FF8906] text-[black] h-[35px] w-full"
+                                            type="submit"> Buy</button></div>
+                                    <div class="w-[60px]"><button
+                                            class="rounded-md flex border-[#FF8906] text-[#FF8906] justify-center items-center border-2 h-[35px] w-full"
+                                            type="submit"><i data-feather="shopping-cart"></i></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex flex-col">
+                    <div><img class="w-[100%]" src="./asset/image/dpsec1.png" alt=""></div>
+                        <div
+                            class="flex justify-center items-center text-[#FFFFFF] rounded-3xl bg-[#D00000] w-[135px] h-[35px] ml-[20px] -mt-[430px] md:-mt-[350px]">
+                            FLASH SALE!</div>
+                    <div class=" flex justify-center items-center">
+                        <div class="flex items-center justify-center bg-[white] w-[90%] mt-[300px] md:mt-[250px]">
+                            <div class="flex flex-col gap-[10px] mx-[15px] my-[25px]">
+                                <div class="text-[24px] font-bold text-[#0B132A]">Hazelnut Latte</div>
+                                <div>You can explore the menu that we provide with fun and have their own taste and make
+                                    your
+                                    day better.</div>
+                                    <div class="flex gap-[10px] items-center">
+                                        <div><i class="text-[#FF8906] fill-[#FF8906] h-[15px] w-[15px]" data-feather="star"></i></div>
+                                        <div><i class="text-[#FF8906] fill-[#FF8906] h-[15px] w-[15px]" data-feather="star"></i></div>
+                                        <div><i class="text-[#FF8906] fill-[#FF8906] h-[15px] w-[15px]" data-feather="star"></i></div>
+                                        <div><i class="text-[#FF8906] fill-[#FF8906] h-[15px] w-[15px]" data-feather="star"></i></div>
+                                        <div>5.0</div>
+                                    </div>
+                                <div class="flex items-center gap-[10px]">
+                                    <div class="line-through text-[12px] text-[#D00000]">IDR 20.000</div>
+                                    <div class="text-[22px] text-[#FF8906]">IDR 10.000</div>
+                                </div>
+                                <div class="flex items-center justify-between gap-[10px]">
+                                    <div class="flex-1"><button
+                                            class="rounded-md font-bold border-none bg-[#FF8906] text-[black] h-[35px] w-full"
+                                            type="submit"> Buy</button></div>
+                                    <div class="w-[60px]"><button
+                                            class="rounded-md flex border-[#FF8906] text-[#FF8906] justify-center items-center border-2 h-[35px] w-full"
+                                            type="submit"><i data-feather="shopping-cart"></i></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center gap-[10px] items-center">
+                <div class="flex justify-center items-center border-none rounded-full bg-[#E8E8E8] text-[#A0A3BD] w-[33px] h-[33px]"><a href="#">1</a></div>
+                <div class="flex justify-center items-center border-none rounded-full bg-[#E8E8E8] text-[#A0A3BD] w-[33px] h-[33px]"><a href="#">2</a></div>
+                <div class="flex justify-center items-center border-none rounded-full bg-[#E8E8E8] text-[#A0A3BD] w-[33px] h-[33px]"><a href="#">3</a></div>
+                <div class="flex justify-center items-center border-none rounded-full bg-[#E8E8E8] text-[#A0A3BD] w-[33px] h-[33px]"><a href="#">4</a></div>
+                <div><button class="text-[#FF8906]" type="submit"><i
+                    class="text-[white] fill-[#FF8906] w-[40px] h-[40px]"
+                    data-feather="arrow-right-circle"></i></button></div>
+            </div>
+        </div>
+    </section>
+    <footer class="gap-[20px] flex flex-col md:flex-row justify-between text-[#4F5665] py-[50px] bg-[#F8F8F8]">
+        <div class="max-w-[500px] flex justify-center">
+            <div class="flex flex-col w-[78%] md:w-[70%] gap-[30px]">
+                <div class="flex items-center text-[#8E6447] gap-[10px]">
+                    <div><i class="fill-[#8E6447] " data-feather="coffee"></i></div>
+                    <div>
+                        <h1 class="text-[20px] font-bold">Coffee Shop</h1>
+                    </div>
+                </div>
+                <div>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality
+                    beans</div>
+                <div class="text-[#AFB5C0]">©2020CoffeeStore</div>
+            </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+            <div class="flex flex-col w-[80%] gap-[10px]">
+                <div class="mb-[10px] text-[black] font-bold">Product</div>
+                <div><a class="hover:text-[#FF8906]" href="#">Our Product</a></div>
+                <div><a class="hover:text-[#FF8906]" href="#">Pricing</a></div>
+                <div><a class="hover:text-[#FF8906]" href="#">Locations</a></div>
+                <div><a class="hover:text-[#FF8906]" href="#">Countries</a></div>
+                <div><a class="hover:text-[#FF8906]" href="#">Blog</a></div>
+            </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+            <div class="flex flex-col w-[80%] gap-[10px]">
+                <div class="mb-[10px] text-[black] font-bold">Engage</div>
+                <div><a class="hover:text-[#FF8906]" href="#">Patner</a></div>
+                <div><a class="hover:text-[#FF8906]" href="#">FAQ</a></div>
+                <div><a class="hover:text-[#FF8906]" href="#">About Us</a></div>
+                <div><a class="hover:text-[#FF8906]" href="#">Privacy Policy</a></div>
+                <div><a class="hover:text-[#FF8906]" href="#">Terms of Service</a></div>
+            </div>
+        </div>
+        <div class=" flex-1 flex justify-center">
+            <div class="flex flex-col w-[80%] gap-[20px]">
+                <div class="text-[black] font-bold">Social Media</div>
+                <div class="flex gap-[20px]">
+                    <div><button
+                            class="h-[35px] w-[35px] border-2 border-[#FF8906] hover:bg-[#FF8906] rounded-full flex justify-center items-center"
+                            type="submit"><i class="text-[black] fill-[black]" data-feather="facebook"></i></button>
+                    </div>
+                    <div><button
+                            class="h-[35px] w-[35px] border-2 border-[#FF8906] hover:bg-[#FF8906] rounded-full flex justify-center items-center"
+                            type="submit"><i class="text-[black] fill-[black]" data-feather="twitter"></i></button>
+                    </div>
+                    <div><button
+                            class="h-[35px] w-[35px] border-2 border-[#FF8906] hover:bg-[#FF8906] rounded-full flex justify-center items-center"
+                            type="submit"><i class="text-[black]" data-feather="instagram"></i></button></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        feather.replace();
+        function showMenu() {
+            const navbar = document.getElementById('navbar')
+            console.log(navbar.classList)
+            if (navbar.classList.contains('h-[60px]')) {
+                navbar.classList.remove('h-[60px]')
+            } else {
+                navbar.classList.add('h-[60px]')
+            }
+                        
+            const menuItems1 = document.getElementById('menuItems1')
+            menuItems1.classList.toggle('hidden');
+            const menuItems2 = document.getElementById('menuItems2')
+            menuItems2.classList.toggle('hidden');
+        }
+        // function showChat() {
+        //     const popUp = document.getElementById('chat')
+        //     console.log(popUp.classList)
+        //     if (popUp.classList.contains('hidden') && popUp.classList.contains('flex')) {
+        //         popUp.classList.remove('hidden');
+        //     } else {
+        //         popUp.classList.add('flex')
+        //         if(popUp.classList.contains('hidden') && popUp.classList.contains('flex')){
+        //             popUp.classList.remove('flex');
+        //         }else{
+        //             popUp.classList.add('hidden')
+        //         }
+        //     }
+        // }
+        function showChat() {
+            const popUp = document.getElementById('chat')
+            popUp.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>

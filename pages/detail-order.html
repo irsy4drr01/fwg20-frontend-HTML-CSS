@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coffee Shop Detail Order">
+
+    <title>Detail Order</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png" />
+    <link rel="manifest" href="../assets/icons/site.webmanifest" />
+    
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+</head>
+
+<body>
+    <header class="fixed bg-black text-white grid grid-cols-3 sm:grid-cols-12 h-[50px] sm:h-[60px] lg:h-[76px] w-screen max-w-screen-2xl px-[10px] sm:pl-5 lg:px-5 xl:px-0">
+        <div class="flex justify-start md:justify-center lg:justify-end xl:justify-start items-center col-start-1 lg:col-start-2 col-span-2 sm:col-span-3 lg:col-span-2">
+            <a href="/index.html">
+                <img class="mr-[10px] sm:w-[28px] lg:w-[35px] sm:h-[26px] lg:h-[35px] sm:mr-[15px]" src="../assets/icons/header/coffee_shop_white.svg" alt="coffee-shop-icon">
+            </a>
+            <a href="/index.html">
+                <p class="text-xl lg:text-2xl font-sacramento lg:mr-[10px]">Coffee Shop</p>
+            </a>            
+        </div>
+        <nav class="hidden sm:text-sm lg:text-base sm:flex sm:justify-start sm:items-center sm:col-start-4 sm:col-span-4 xl:col-span-5">
+            <a href="/index.html" class="flex justify-center items-center h-[40px] w-[80px] xl:mx-3 rounded-[5px] hover:bg-gray-700">Home</a>
+            <a href="./product.html" class="flex justify-center items-center h-[40px] w-[80px] xl:mx-3 rounded-[5px] hover:bg-gray-700">Product</a>
+        </nav>
+        <div class="flex justify-end md:justify-start xl:justify-end items-center col-start-3 sm:col-start-8 xl:col-start-9 col-span-1 sm:col-span-5 xl:col-span-3">
+            <button class="flex justify-center items-center h-[40px] w-[40px] rounded-[5px] hover:bg-gray-700 md:mx-[7px] sm:p-[3px]">
+                <img src="../assets/icons/header/Search.svg" alt="search-icon">
+            </button>
+            <button class="flex justify-center items-center h-[40px] w-[40px] rounded-[5px] hover:bg-gray-700 md:mx-[7px] sm:p-[3px]">
+                <img src="../assets/icons/header/ShoppingCart.svg" alt="shopping-cart">
+            </button>
+            <button id="menu-button" class="w-[30px] h-[30px] flex sm:hidden flex-col justify-evenly items-center hover:bg-gray-700 rounded-[5px]">
+                <div class="w-[3px] h-[3px] bg-white rounded-[100%]"></div>
+                <div class="w-[3px] h-[3px] bg-white rounded-[100%]"></div>
+                <div class="w-[3px] h-[3px] bg-white rounded-[100%]"></div>
+            </button>
+            <button class="hidden sm:flex items-center text-[10px] md:text-sm lg:text-base mx-[10px] h-[0] py-[13px] md:py-[20px] lg:py-[22px] px-[8px] md:px-[12px] border-white border-solid border-[1px] rounded-[5px] font-medium hover:bg-gray-700"><a href="../pages/login.html">Sign In</a></button>
+            <button class="hidden sm:flex items-center text-[10px] md:text-sm lg:text-base mx-[10px] h-[0] py-[13px] md:py-[20px] lg:py-[22px] px-[8px] md:px-[12px] rounded-[5px] font-medium text-[#0B132A] bg-orangecustom hover:bg-[#ff4006]"><a href="../pages/register.html">Sign Up</a></button>            
+        </div>
+        <div id="mobile-menu" class="hidden absolute w-screen h-screen bg-white bg-opacity-10 backdrop-blur-[6px] lg:hidden">
+            <div class="flex justify-end mt-3 mr-3">
+                <div class="flex flex-col justify-evenly w-[150px] h-auto bg-black rounded-xl pl-3">
+                    <button id="close-menu" class="absolute top-2 right-5 text-white text-2xl">&times;</button>
+                    <a href="/index.html" class="text-white w-fit hover:text-gray-600 py-2">Home</a>
+                    <a href="/product.html" class="text-white w-fit hover:text-gray-600 py-2">Product</a>
+                    <a href="../pages/login.html" class="text-white w-fit hover:text-gray-600 py-2">Sign In</a>
+                    <a href="../pages/register.html" class="text-white w-fit hover:text-gray-600 py-2">Sign Up</a>
+                </div>
+            </div>            
+        </div>        
+    </header>
+    <main class="flex flex-col md:flex-row text-[#4F5665] gap-[20px] mb-[50px] pt-[100px]">
+        <div class=" max-w-[700px] w-full flex justify-center md:justify-end items-center">
+            <div class="w-[90%] flex flex-col gap-[20px]">
+                <div class="flex flex-col gap-[5px]">
+                    <div class="text-[#0B0909] text-[48px] font-bold">Order #12354-09893</div>
+                    <div>21 March 2023 at 10:30 AM</div>
+                </div>
+                <div class="flex justify-between gap-[50px]">
+                    <div class="text-[22px] text-[#0B132A] font-bold">Order Information</div>
+                </div>
+                <div class="flex flex-col">
+                    <div class="flex justify-between pb-[15px] border-b-2">
+                        <div class="flex gap-[10px]"><i data-feather="user"></i>Full Name</div>
+                        <div class="text-[#0B132A] font-bold">Ghaluh Wizard Anggoro</div>
+                    </div>
+                    <div class="flex justify-between py-[20px] border-b-2">
+                        <div class="flex gap-[10px]"><i data-feather="map-pin"></i>Address</div>
+                        <div class="text-[#0B132A] font-bold">Griya bandung indah</div>
+                    </div>
+                    <div class="flex justify-between py-[20px] border-b-2">
+                        <div class="flex gap-[10px]"><i data-feather="phone-call"></i>Phone</div>
+                        <div class="text-[#0B132A] font-bold">082116304338</div>
+                    </div>
+                    <div class="flex justify-between py-[20px] border-b-2">
+                        <div class="flex gap-[10px]"><i data-feather="credit-card"></i>Payment Method</div>
+                        <div class="text-[#0B132A] font-bold">Cash</div>
+                    </div>
+                    <div class="flex justify-between py-[20px] border-b-2">
+                        <div class="flex gap-[10px]"><i data-feather="truck"></i>Shipping</div>
+                        <div class="text-[#0B132A] font-bold">Dine In</div>
+                    </div>
+                    <div class="flex justify-between items-center py-[10px] border-b-2">
+                        <div class="flex gap-[10px]"><i data-feather="repeat"></i>Status</div>
+                        <div class="p-[10px] rounded-[20px] bg-green-100  text-[#00A700] font-bold">Done</div>
+                    </div>
+                    <div class="flex justify-between py-[20px]">
+                        <div class="flex gap-[10px]">Total Transaksi</div>
+                        <div class="text-[#FF8906] font-bold">Idr 40.000</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="flex flex-1 justify-center md:justify-start pt-[120px]">
+            <div class="w-[90%] flex flex-col gap-[20px]">
+                <div class="text-[#0B132A] font-bold text-[22px]">Your Order</div>
+                <div class="flex justify-between items-center bg-[#E8E8E84D] gap-[20px] px-[10px] py-[10px]">
+                    <div class=""><img width="170px" height="170px" src="../assets/images/product/product-img-1.webp" alt=""></div>
+                    <div class="flex flex-col flex-1 gap-[10px] py-[10px]">
+                        <div
+                            class=" flex justify-center items-center text-[#FFFFFF] rounded-3xl bg-[#D00000] w-[120px] h-[35px]">
+                            FLASH SALE!</div>
+                        <div class="text-[#0B0909] text-[18px] font-bold">Hazelnut Latte</div>
+                        <div class="flex gap-[10px] items-center">
+                            <div>2pcs</div>
+                            <div class="w-[3px] h-[20px] bg-[#4F5665]"></div>
+                            <div>Regular</div>
+                            <div class="w-[3px] h-[20px] bg-[#4F5665]"></div>
+                            <div>Ice</div>
+                            <div class="w-[3px] h-[20px] bg-[#4F5665]"></div>
+                            <div>Dine In</div>
+                        </div>
+                        <div class="flex items-center gap-[10px]">
+                            <div class="line-through font-bold text-[12px] text-[#D00000]">IDR 40.000</div>
+                            <div class="text-[22px] font-bold text-[#FF8906]">IDR 20.000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center bg-[#E8E8E84D] gap-[20px] px-[10px] py-[10px]">
+                    <div class=""><img width="170px" height="170px" src="../assets/images/product/product-img-1.webp" alt=""></div>
+                    <div class="flex flex-col flex-1 gap-[10px] py-[10px]">
+                        <div
+                            class=" flex justify-center items-center text-[#FFFFFF] rounded-3xl bg-[#D00000] w-[120px] h-[35px]">
+                            FLASH SALE!</div>
+                        <div class="text-[#0B0909] text-[18px] font-bold">Hazelnut Latte</div>
+                        <div class="flex gap-[10px] items-center">
+                            <div>2pcs</div>
+                            <div class="w-[3px] h-[20px] bg-[#4F5665]"></div>
+                            <div>Regular</div>
+                            <div class="w-[3px] h-[20px] bg-[#4F5665]"></div>
+                            <div>Ice</div>
+                            <div class="w-[3px] h-[20px] bg-[#4F5665]"></div>
+                            <div>Dine In</div>
+                        </div>
+                        <div class="flex items-center gap-[10px]">
+                            <div class="line-through font-bold text-[12px] text-[#D00000]">IDR 40.000</div>
+                            <div class="text-[22px] font-bold text-[#FF8906]">IDR 20.000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="gap-[20px] flex flex-col md:flex-row justify-between text-[#4F5665] py-[50px] bg-[#F8F8F8]">
+        <div class="max-w-[500px] flex justify-center">
+            <div class="flex flex-col w-[78%] md:w-[70%] gap-[30px]">
+                <div class="flex items-center text-[#8E6447] gap-[10px]">
+                    <div><img src="../assets/icons/header/coffee_shop.svg" alt="coffee-shop-icon"></div>
+                    <div>
+                        <h1 class="text-[20px] font-bold font-sacramento">Coffee Shop</h1>
+                    </div>
+                </div>
+                <div>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality
+                    beans</div>
+                <div class="text-[#AFB5C0]">©2020CoffeeStore</div>
+            </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+            <div class="flex flex-col w-[80%] gap-[10px]">
+                <div class="mb-[10px] text-[black] font-bold">Product</div>
+                <div><a class="hover:text-[#FF8906]" href="#">Our Product</a></div>
+                <div><a class="hover:text-[#FF8906]" href="#">Pricing</a></div>
+                <div><a class="hover:text-[#FF8906]" href="#">Locations</a></div>
+                <div><a class="hover:text-[#FF8906]" href="#">Countries</a></div>
+                <div><a class="hover:text-[#FF8906]" href="#">Blog</a></div>
+            </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+            <div class="flex flex-col w-[80%] gap-[10px]">
+                <div class="mb-[10px] text-[black] font-bold">Engage</div>
+                <div><a class="hover:text-[#FF8906]" href="#">Patner</a></div>
+                <div><a class="hover:text-[#FF8906]" href="#">FAQ</a></div>
+                <div><a class="hover:text-[#FF8906]" href="#">About Us</a></div>
+                <div><a class="hover:text-[#FF8906]" href="#">Privacy Policy</a></div>
+                <div><a class="hover:text-[#FF8906]" href="#">Terms of Service</a></div>
+            </div>
+        </div>
+        <div class=" flex-1 flex justify-center">
+            <div class="flex flex-col w-[80%] gap-[20px]">
+                <div class="text-[black] font-bold">Social Media</div>
+                <div class="flex gap-[20px]">
+                    <div>
+                        <button class="h-[35px] w-[35px] border-2 border-[#FF8906] bg-[#FF8906] rounded-full flex justify-center items-center" type="submit">
+                            <i class="text-[black] fill-[black]" data-feather="facebook"></i>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="h-[35px] w-[35px] border-2 border-[#FF8906] bg-[#FF8906] rounded-full flex justify-center items-center" type="submit">
+                            <i class="text-[black] fill-[black]" data-feather="twitter"></i>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="h-[35px] w-[35px] border-2 border-[#FF8906] bg-[#FF8906] rounded-full flex justify-center items-center" type="submit">
+                            <i class="text-[black]" data-feather="instagram"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        feather.replace();
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenu = document.getElementById('close-menu');
+
+            menuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            closeMenu.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+
+            mobileMenu.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });        
+        });
+        
+    </script>
+</body>
+
+</html>
