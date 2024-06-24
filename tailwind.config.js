@@ -12,11 +12,13 @@ const tailwindConfig = {
           'custom-2': 'calc((100vw - 2560px)/2)',
         },
         screens: {
-          '1380': '1380px',          
+          '1380': '1380px',
+          '470': '470px'
         },
         colors: {             
           redcustom: '#D00000',
           orangecustom: '#FF8906',
+          grayfooter: '#F8F8F8',
         },
       },
     },

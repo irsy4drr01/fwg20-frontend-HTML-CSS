@@ -73,13 +73,18 @@ main section[class="login"] {
 
 header {    
     display: flex;
-    align-items: flex-start;
+    align-items: flex-start;    
+}
+
+header a {
+    text-decoration: none;
 }
 
 header p {
     font-family: "Sacramento", cursive;
     font-size: 20px;
     font-weight: 400;
+    color: #8E6447;
 }
 
 header img {
