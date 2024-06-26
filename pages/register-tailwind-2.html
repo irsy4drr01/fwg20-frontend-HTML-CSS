@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Coffee Shop REGISTER" />
+
+    <title>REGISTER</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png" />
+    <link rel="manifest" href="../assets/icons/site.webmanifest" />
+    
+    <link rel="stylesheet" href="../styles/main.css" />
+</head>
+<body class="bg-gray-500 flex px-custom">
+    <img src="../assets/images/register_bg.webp" loading="lazy" alt="register-bg" class="h-screen max-h-[1080px] min-426-max-1080:hidden screen-max-425:hidden" />
+    <img src="../assets/images/register_bg_small.webp" loading="lazy" alt="register-bg" class="hidden lg:block screen-1081:hidden" />
+    <div class="bg-white flex justify-center items-center w-screen h-screen screen-max-425:max-h-[500px] max-h-[1080px] screen-h-1081:py-[200px] screen-h-1081:px-[0] screen-max-425:h-548 screen-max-425:w-320 screen-max-425:mx-10 screen-max-425:flex-1 screen-max-425:my-[calc((100vh-548px)/2)]">
+        <main class="flex flex-col w-full h-full max-h-[600px] px-10 py-4">
+            <header class="flex items-start flex-[0.25] screen-max-425:flex-[0.25] mb-2">
+                <a href="../index.html" class="mr-4">
+                    <img src="../assets/icons/header/coffee_shop.svg" width="28" height="26" alt="coffee-shop-icon" />
+                </a>
+                <a href="../index.html" class="text-2xl font-medium font-sacramento text-[#8E6447]">Coffee Shop</a>
+            </header>
+            <section class="flex flex-col justify-between flex-2">
+                <p class="text-[#8E6447] font-semibold text-xl my-2">Register</p>
+                <p class="text-[#4F5665] font-normal text-lg mb-5 min-426-max-768:mb-[10px] screen-max-425:mb-[5px]">Fill out the form correctly</p>
+                <form action="">
+                    <label for="fullname" class="text-base font-semibold text-[#0B132A]">Full Name</label>
+                    <div class="flex items-center border border-[#DEDEDE] rounded-md mb-2 p-2">
+                        <img src="../assets/icons/register-login/fullname.svg" width="14.34" height="18.41" alt="fullname-icon" class="ml-2">
+                        <input type="text" placeholder="Enter Your Full Name" id="fullname" class="flex-1 border-none focus:outline-none ml-2 min-426-max-768:mb-[10px] screen-max-425:mb-[10px]" />
+                    </div>
+                    <label for="email" class="text-base font-semibold text-[#0B132A]">Email</label>
+                    <div class="flex items-center border border-[#DEDEDE] rounded-md mb-2 p-2">
+                        <img src="../assets/icons/register-login/email.svg" width="16" height="12" alt="email-icon" class="ml-2">
+                        <input type="text" placeholder="Enter Your Email" id="email" class="flex-1 border-none focus:outline-none ml-2 min-426-max-768:mb-[10px] screen-max-425:mb-[10px]" />
+                    </div>
+                    <label for="password" class="text-base font-semibold text-[#0B132A]">Password</label>
+                    <div class="flex items-center border border-[#DEDEDE] rounded-md mb-2 p-2">
+                        <img src="../assets/icons/register-login/password.svg" width="12.33" height="12.33" alt="password-icon" class="ml-2">
+                        <input type="password" placeholder="Enter Your Password" id="password" class="flex-1 border-none focus:outline-none ml-2 min-426-max-768:mb-[10px] screen-max-425:mb-[15px]" />
+                    </div>
+                    <label for="confirm-password" class="text-base font-semibold text-[#0B132A]">Confirm Password</label>
+                    <div class="flex items-center border border-[#DEDEDE] rounded-md mb-2 p-2">
+                        <img src="../assets/icons/register-login/password.svg" width="12.33" height="12.33" alt="password-icon" class="ml-2">
+                        <input type="password" placeholder="Enter Your Password Again" id="confirm-password" class="flex-1 border-none focus:outline-none ml-2 min-426-max-768:mb-[10px] screen-max-425:mb-[15px]" />
+                    </div>
+                    <button class="w-full bg-[#FF8906] rounded-md border-none h-10 text-lg font-medium text-[#0B132A] hover:bg-[#fca23c] hover:font-bold cursor-pointer">REGISTER</button>
+                </form>
+            </section>
+            <section class="flex flex-col justify-between items-center mt-4">
+                <p class="text-lg font-normal">Have An Account? <a href="./login.html" class="text-[#1100FF] font-extrabold">Login</a></p>
+                <div class="flex justify-between w-full mt-4 screen-max-425:justify-evenly">
+                    <div class="flex justify-center items-center w-[49%] p-2 rounded-md shadow-sm cursor-pointer screen-max-425:w-10 screen-max-425:h-10 screen-max-425:items-center">
+                        <img src="../assets/icons/register-login/facebook-btn.svg" width="20" height="19.88" alt="facebook-icon" class="mr-4 screen-max-425:m-0">
+                        <p class="screen-max-425:hidden">Facebook</p>
+                    </div>
+                    <div class="flex justify-center items-center w-[49%] p-2 rounded-md shadow-sm cursor-pointer screen-max-425:w-10 screen-max-425:h-10 screen-max-425:items-center">
+                        <img src="../assets/icons/register-login/google-btn.svg" width="24" height="24" alt="google-icon" class="mr-4 screen-max-425:m-0">
+                        <p class="screen-max-425:hidden">Google</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

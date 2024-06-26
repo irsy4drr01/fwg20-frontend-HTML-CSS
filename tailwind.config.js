@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 const tailwindConfig = {
-    content: ["./pages/*.{html,js}"],
+    content: [
+      "./pages/*.{html,js}",
+      "./*.{html,js}"
+    ],
     theme: {
       extend: {
         fontFamily: {
@@ -22,11 +25,21 @@ const tailwindConfig = {
           'xl':	'1280px',
           '1.5xl': '1380px',
           '2xl':	'1536px',
+          'screen-1080': '1080px',
+          'screen-1081': '1081px',
+          'screen-426': '426px',
+          'screen-600': '600px',
+          'screen-max-425': {'raw':'(max-width: 425px)'},
+          'screen-max-600': {'raw':'(max-width: 600px)'},
+          'screen-h-1081': {'raw': '(min-height: 1081px)'},
+          'min-426-max-1080': {'raw': '(min-width: 426px) and (max-width: 1080px)'},
+          'min-426-max-768': {'raw': '(min-width: 426px) and (max-width: 768px)'}
         },
         colors: {             
           redcustom: '#D00000',
           orangecustom: '#FF8906',
           grayfooter: '#F8F8F8',
+          'black-transparent-50': 'rgba(0, 0, 0, 0.5)',
         },
         gridTemplateRows: {
           '8-custom': 'repeat(8, minmax(0, auto))',

@@ -84,24 +84,24 @@
                 </div>
             </div>            
             <div class="flex flex-col col-start-2 s:col-start-2 s:row-start-1 s:row-span-2">
-                <div class="bg-[#D00000] rounded-[10px] w-fit">
-                    <p class="text-[10px] font-semibold text-white py-1 px-2">FLASH SALE!</p>
+                <div class="bg-[#D00000] rounded-[10px] sm:rounded-2xl w-fit sm:mb-5">
+                    <p class="text-[10px] sm:text-base font-semibold text-white py-1 px-2">FLASH SALE!</p>
                 </div>
-                    <p class="font-semibold">Hazelnut Latte</p>
-                    <p class="text-orangecustom text-[15px]"><span class="line-through text-redcustom text-[10px]">IDR 20.000</span> IDR 10.000</p>
-                <div class="flex justify-between w-[120px]">
-                    <img src="../assets/icons/product/star.svg" alt="star-1">
-                    <img src="../assets/icons/product/star.svg" alt="star-2">
-                    <img src="../assets/icons/product/star.svg" alt="star-3">
-                    <img src="../assets/icons/product/star.svg" alt="star-4">
-                    <img src="../assets/icons/product/star.svg" alt="star-5">
-                    <p>5.0</p>
+                    <p class="font-semibold sm:text-4xl sm:mb-5">Hazelnut Latte</p>
+                    <p class="text-orangecustom text-[15px] sm:text-2xl sm:mb-5"><span class="line-through text-redcustom text-[10px] sm:text-lg">IDR 20.000</span> IDR 10.000</p>
+                <div class="flex justify-between w-[120px] sm:w-40 sm:mb-5">
+                    <img class="sm:size-5" src="../assets/icons/product/star.svg" alt="star-1">
+                    <img class="sm:size-5" src="../assets/icons/product/star.svg" alt="star-2">
+                    <img class="sm:size-5" src="../assets/icons/product/star.svg" alt="star-3">
+                    <img class="sm:size-5" src="../assets/icons/product/star.svg" alt="star-4">
+                    <img class="sm:size-5" src="../assets/icons/product/star.svg" alt="star-5">
+                    <p class="sm:text-base">5.0</p>
                 </div>
-                <div class="flex items-center">
-                    <p class="text-[12px] w-[100px] min-[450px]:w-fit mr-1">200+ Review | Recomendation</p>
+                <div class="flex items-center sm:mb-5">
+                    <p class="text-[12px] sm:text-xl w-[100px] min-[450px]:w-fit mr-1">200+ Review | Recomendation</p>
                     <img src="../assets/icons/product/ThumbsUp.svg" alt="thumb">
                 </div>
-                <p class="hidden ss:flex text-xs text-justify pt-1">
+                <p class="hidden ss:flex text-xs sm:text-xl text-justify pt-1 sm:mb-5">
                     Cold brewing is a method of brewing that combines ground coffee and cool
                     water and uses time instead of heat to extract the flavor. It is brewed in small
                     batches and steeped for as long as 48 hours.
@@ -115,13 +115,13 @@
                 </p>                
             </div>
             <div class="flex flex-col col-span-2 2ss:col-start-2 s:row-start-5 2ss:row-start-3 s:row-span-4 2ss:row-span-6">
-                <div class="flex justify-start items-center mb-2.5 w-fit h-fit">
-                    <button id="decrement" class="flex justify-center items-center bg-white w-5 h-5 pb-1 rounded border-2 border-orangecustom">-</button>
-                    <input id="number" type="number" value="1" min="1" class="w-7 h-5 text-center text-xs rounded border-2 border-solid border-[#E8E8E8] outline-none">
-                    <button id="increment" class="flex justify-center items-center bg-orangecustom w-5 h-5 pb-1 rounded border-2 border-orangecustom">+</button>
+                <div class="flex justify-start items-center mb-2.5 w-fit h-fit sm:mb-5">
+                    <button id="decrement" class="flex justify-center items-center bg-white w-5 h-5 sm:size-10 sm:text-xl pb-1 rounded border-2 border-orangecustom">-</button>
+                    <input id="number" type="number" value="1" min="1" class="w-7 sm:w-12 h-5 sm:h-10 text-center text-xs sm:text-xl rounded border-2 border-solid border-[#E8E8E8] outline-none">
+                    <button id="increment" class="flex justify-center items-center bg-orangecustom w-5 h-5 sm:size-10 sm:text-xl pb-1 rounded border-2 border-orangecustom">+</button>
                 </div>
-                <p class="text-sm font-semibold mb-2.5">Choose Size</p>
-                <div class="flex justify-between text-xs space-x-1 2ss:space-x-0 mb-2.5">
+                <p class="text-sm sm:text-xl font-semibold mb-2.5 sm:mb-5">Choose Size</p>
+                <div class="flex justify-between text-xs sm:text-xl space-x-1 2ss:space-x-0 mb-2.5 sm:mb-5">
                     <label class="flex items-center justify-center cursor-pointer">
                         <input type="radio" name="size" value="reguler" class="hidden peer" />
                         <span class="text-center w-[30vw] 2ss:w-[15vw] lg:w-[10vw] lg:max-w-[190px] py-1 border-2 peer-checked:border-orangecustom peer-checked:text-orangecustom">REGULER</span>
@@ -136,8 +136,8 @@
                     </label>
                 </div>
 
-                <p class="text-sm font-semibold mb-2.5">Hot/Ice?</p>
-                <div class="flex justify-between text-xs space-x-1 mb-10">
+                <p class="text-sm sm:text-xl font-semibold mb-2.5 sm:mb-5">Hot/Ice?</p>
+                <div class="flex justify-between text-xs sm:text-xl space-x-1 mb-10">
                     <label class="flex items-center justify-center cursor-pointer">
                         <input type="radio" name="temperature" value="ice" class="hidden peer" />
                         <span class="text-center w-[45vw] 2ss:w-[23vw] lg:w-[18vw] lg:max-w-[315px] py-1 border-2 peer-checked:border-orangecustom peer-checked:text-orangecustom">Ice</span>
@@ -147,7 +147,7 @@
                         <span class="text-center w-[45vw] 2ss:w-[23vw] lg:w-[18vw] lg:max-w-[315px] py-1 border-2 peer-checked:border-orangecustom peer-checked:text-orangecustom">Hot</span>
                     </label>
                 </div>
-                <div class="flex justify-between text-xs space-x-1">
+                <div class="flex justify-between text-xs sm:text-xl space-x-1">
                     <a href="../pages/detail-order.html">
                         <button class="flex justify-center items-center py-1 w-[45vw] 2ss:w-[23vw] lg:w-[18vw] lg:max-w-[315px] rounded border-2 border-orangecustom bg-orangecustom hover:bg-[#ff4006] cursor-pointer">Buy</button>
                     </a>
@@ -159,31 +159,31 @@
             </div>
         </section>
         <section class="flex flex-col px-3 lg:px-[120px] s:pt-10 sm:pt-0 pb-10">
-            <h1 class="font-bold text-black mb-2.5">Recommendation <span class="text-[#8E6447]">For You</span></h1>
-            <div class="flex justify-between w-full h-[280px] space-x-2 mb-[5%] sm:mb-[8%] xl:mb-[10%] 2s:grid 2s:grid-cols-3 2s:gap-1 lg:gap-3 lg:mt-3 2s:space-x-0 1.5xl:flex 1.5xl:justify-between">
+            <p class="font-bold text-black mb-2.5 sm:text-4xl">Recommendation <span class="text-[#8E6447]">For You</span></p>
+            <div class="flex justify-between w-full h-[280px] space-x-2 mb-[5%] md:mb-[28%] xl:mb-[25%] 2s:grid 2s:grid-cols-3 2s:gap-1 lg:gap-3 lg:mt-3 2s:space-x-0 1.5xl:flex 1.5xl:justify-between">
                 <div class="min-w-[135px]">
                     <div class="relative w-fit">
                         <div class="absolute bg-white w-[90%] mt-[70%] ml-[5%] z-[5] py-0.5 px-1">
-                            <p class="text-xs font-semibold mb-1">Hazelnut Latte</p>
-                            <p class="text-[10px] text-justify mb-1">
+                            <p class="text-xs md:text-xl font-semibold mb-1 md:mb-3">Hazelnut Latte</p>
+                            <p class="text-[10px] md:text-xl text-justify mb-1 md:mb-3">
                                 You can explore the menu that we provide with
                                 fun and have their own taste and make your day better.
                             </p>
-                            <div class="flex justify-between w-[100px] mb-1">
+                            <div class="flex justify-between w-[100px] md:w-40 mb-1">
                                 <img class="w-[10%]" src="../assets/icons/product/star.svg" alt="star-1">
                                 <img class="w-[10%]" src="../assets/icons/product/star.svg" alt="star-2">
                                 <img class="w-[10%]" src="../assets/icons/product/star.svg" alt="star-3">
                                 <img class="w-[10%]" src="../assets/icons/product/star.svg" alt="star-4">
                                 <img class="w-[10%]" src="../assets/icons/product/star.svg" alt="star-5">
-                                <p class="text-[10px] leading-none">5.0</p>
+                                <p class="text-[10px] md:text-base leading-none">5.0</p>
                             </div>
-                            <p class="text-orangecustom text-[10px] mb-1"><span class="line-through text-redcustom text-[8px]">IDR 20.000</span> IDR 10.000</p>
-                            <div class="flex justify-between text-xs space-x-1">
+                            <p class="text-orangecustom text-[10px] md:text-xl mb-1"><span class="line-through text-redcustom text-[8px] md:text-base">IDR 20.000</span> IDR 10.000</p>
+                            <div class="flex justify-between text-xs md:text-xl space-x-1">
                                 <a class="w-[80%]" href="../pages/detail-order.html">
                                     <button class="flex justify-center items-center py-0.5 w-full rounded border-2 border-orangecustom bg-orangecustom hover:bg-[#ff4006] cursor-pointer">Buy</button>
                                 </a>
-                                <button class="flex justify-center items-center py-0.5 w-[20%] rounded border-2 bg-white hover:border-orangecustom cursor-pointer">
-                                    <img class="w-4 h-4 mx-2" src="../assets/icons/product/ShoppingCartOrange.svg" alt="shopping-cart">                                    
+                                <button class="flex justify-center items-center py-0.5 md:py-0 w-[20%] rounded border-2 bg-white hover:border-orangecustom cursor-pointer">
+                                    <img class="w-4 h-4 md:size-7 mx-2 md:mx-0" src="../assets/icons/product/ShoppingCartOrange.svg" alt="shopping-cart">                                    
                                 </button>
                             </div>
                         </div>
@@ -196,26 +196,26 @@
                 <div class="min-w-[135px]">
                     <div class="relative w-fit">
                         <div class="absolute bg-white w-[90%] mt-[70%] ml-[5%] z-[5] py-0.5 px-1">
-                            <p class="text-xs font-semibold mb-1">Hazelnut Latte</p>
-                            <p class="text-[10px] text-justify mb-1">
+                            <p class="text-xs md:text-xl font-semibold mb-1 md:mb-3">Hazelnut Latte</p>
+                            <p class="text-[10px] md:text-xl text-justify mb-1 md:mb-3">
                                 You can explore the menu that we provide with
                                 fun and have their own taste and make your day better.
                             </p>
-                            <div class="flex justify-between w-[100px] mb-1">
+                            <div class="flex justify-between w-[100px] md:w-40 mb-1">
                                 <img class="w-[10%]" src="../assets/icons/product/star.svg" alt="star-1">
                                 <img class="w-[10%]" src="../assets/icons/product/star.svg" alt="star-2">
                                 <img class="w-[10%]" src="../assets/icons/product/star.svg" alt="star-3">
                                 <img class="w-[10%]" src="../assets/icons/product/star.svg" alt="star-4">
                                 <img class="w-[10%]" src="../assets/icons/product/star.svg" alt="star-5">
-                                <p class="text-[10px] leading-none">5.0</p>
+                                <p class="text-[10px] md:text-base leading-none">5.0</p>
                             </div>
-                            <p class="text-orangecustom text-[10px] mb-1"><span class="line-through text-redcustom text-[8px]">IDR 20.000</span> IDR 10.000</p>
-                            <div class="flex justify-between text-xs space-x-1">
+                            <p class="text-orangecustom text-[10px] md:text-xl mb-1"><span class="line-through text-redcustom text-[8px] md:text-base">IDR 20.000</span> IDR 10.000</p>
+                            <div class="flex justify-between text-xs md:text-xl space-x-1">
                                 <a class="w-[80%]" href="../pages/detail-order.html">
                                     <button class="flex justify-center items-center py-0.5 w-full rounded border-2 border-orangecustom bg-orangecustom hover:bg-[#ff4006] cursor-pointer">Buy</button>
                                 </a>
-                                <button class="flex justify-center items-center py-0.5 w-[20%] rounded border-2 bg-white hover:border-orangecustom cursor-pointer">
-                                    <img class="w-4 h-4 mx-2" src="../assets/icons/product/ShoppingCartOrange.svg" alt="shopping-cart">                                    
+                                <button class="flex justify-center items-center py-0.5 md:py-0 w-[20%] rounded border-2 bg-white hover:border-orangecustom cursor-pointer">
+                                    <img class="w-4 h-4 md:size-7 mx-2 md:mx-0" src="../assets/icons/product/ShoppingCartOrange.svg" alt="shopping-cart">                                    
                                 </button>
                             </div>
                         </div>
@@ -228,26 +228,26 @@
                 <div class="hidden 2s:min-w-[135px] 2s:flex">
                     <div class="relative w-fit">
                         <div class="absolute bg-white w-[90%] mt-[70%] ml-[5%] z-[5] py-0.5 px-1">
-                            <p class="text-xs font-semibold mb-1">Hazelnut Latte</p>
-                            <p class="text-[10px] text-justify mb-1">
+                            <p class="text-xs md:text-xl font-semibold mb-1 md:mb-3">Hazelnut Latte</p>
+                            <p class="text-[10px] md:text-xl text-justify mb-1 md:mb-3">
                                 You can explore the menu that we provide with
                                 fun and have their own taste and make your day better.
                             </p>
-                            <div class="flex justify-between w-[100px] mb-1">
+                            <div class="flex justify-between w-[100px] md:w-40 mb-1">
                                 <img class="w-[10%]" src="../assets/icons/product/star.svg" alt="star-1">
                                 <img class="w-[10%]" src="../assets/icons/product/star.svg" alt="star-2">
                                 <img class="w-[10%]" src="../assets/icons/product/star.svg" alt="star-3">
                                 <img class="w-[10%]" src="../assets/icons/product/star.svg" alt="star-4">
                                 <img class="w-[10%]" src="../assets/icons/product/star.svg" alt="star-5">
-                                <p class="text-[10px] leading-none">5.0</p>
+                                <p class="text-[10px] md:text-base leading-none">5.0</p>
                             </div>
-                            <p class="text-orangecustom text-[10px] mb-1"><span class="line-through text-redcustom text-[8px]">IDR 20.000</span> IDR 10.000</p>
-                            <div class="flex justify-between text-xs space-x-1">
+                            <p class="text-orangecustom text-[10px] md:text-xl mb-1"><span class="line-through text-redcustom text-[8px] md:text-base">IDR 20.000</span> IDR 10.000</p>
+                            <div class="flex justify-between text-xs md:text-xl space-x-1">
                                 <a class="w-[80%]" href="../pages/detail-order.html">
                                     <button class="flex justify-center items-center py-0.5 w-full rounded border-2 border-orangecustom bg-orangecustom hover:bg-[#ff4006] cursor-pointer">Buy</button>
                                 </a>
-                                <button class="flex justify-center items-center py-0.5 w-[20%] rounded border-2 bg-white hover:border-orangecustom cursor-pointer">
-                                    <img class="w-4 h-4 mx-2" src="../assets/icons/product/ShoppingCartOrange.svg" alt="shopping-cart">                                    
+                                <button class="flex justify-center items-center py-0.5 md:py-0 w-[20%] rounded border-2 bg-white hover:border-orangecustom cursor-pointer">
+                                    <img class="w-4 h-4 md:size-7 mx-2 md:mx-0" src="../assets/icons/product/ShoppingCartOrange.svg" alt="shopping-cart">                                    
                                 </button>
                             </div>
                         </div>
@@ -266,9 +266,9 @@
             </div>
         </section>
     </main>
-    <footer class="bg-grayfooter px-3 lg:px-[120px] py-0">
+    <footer class="bg-grayfooter px-3 lg:px-[120px] py-0 sm:py-14">
         <div class="sm:grid sm:grid-cols-12">
-            <div class="pb-6 sm:col-span-3 sm:pt-5">
+            <div class="pb-6 sm:pb-0 sm:col-span-3 sm:pt-5">
                 <div class="flex items-center py-4 sm:py-0">
                     <img class="w-auto h-5" src="../assets/icons/header/coffee_shop.svg" alt="coffee-shop-icon">
                     <p class="font-sacramento text-[#8E6447] font-semibold px-3">Coffee Shop</p>
@@ -280,7 +280,7 @@
                 </p>
             </div>
             <div class="flex justify-evenly sm:col-start-5 sm:col-span-5">
-                <div class="text-center sm:text-left pb-6 sm:flex-1">
+                <div class="text-center sm:text-left pb-6 sm:pb-0 sm:flex-1">
                     <h3 class="text-[#0B132A] font-medium pb-4">Product</h3>
                     <ul class="text-[#4F5665]">
                         <li class="pb-2">Our Product</li>
@@ -290,7 +290,7 @@
                         <li>Blog</li>
                     </ul>
                 </div>
-                <div class="text-center sm:text-left pb-6 sm:flex-1 sm:pl-3">
+                <div class="text-center sm:text-left pb-6 sm:pb-0 sm:flex-1 sm:pl-3">
                     <h3 class="text-[#0B132A] font-medium pb-4">Engage</h3>
                     <ul class="text-[#4F5665]">
                         <li class="pb-2">Partner</li>
@@ -310,7 +310,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center pb-4">
+        <div class="flex justify-center sm:justify-start">
             <p class="text-[#AFB5C0]">©2020CoffeeStore</p>
         </div>        
     </footer>    
